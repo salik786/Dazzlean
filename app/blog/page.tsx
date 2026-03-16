@@ -151,26 +151,9 @@ export default function BlogPage() {
               key={post.id}
               href={`/blog/${post.id}`}
               style={{ textDecoration: "none" }}
+              className="blog-card-link"
             >
-              <article
-                style={{
-                  backgroundColor: "var(--c-ivory)",
-                  overflow: "hidden",
-                  cursor: "pointer",
-                  height: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                  transition: "transform 0.3s ease",
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.transform =
-                    "translateY(-4px)";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.transform =
-                    "translateY(0)";
-                }}
-              >
+              <article className="blog-card">
                 {/* Visual */}
                 <div
                   style={{

@@ -4,7 +4,7 @@ import { useState } from "react";
 import ShopHero from "@/components/shop/ShopHero";
 import FilterBar from "@/components/shop/FilterBar";
 import ProductCard from "@/components/shop/ProductCard";
-import { products, getProductsByType } from "@/lib/products";
+import { products } from "@/lib/products";
 
 export default function ShopPage() {
   const [activeFilter, setActiveFilter] = useState("All Products");

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 const faqItems = [

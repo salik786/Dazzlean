@@ -9,15 +9,6 @@ const items = [
 ];
 
 export default function MarqueeStrip() {
-  const separator = (
-    <span
-      style={{ color: "var(--c-rose)", margin: "0 16px", flexShrink: 0 }}
-      aria-hidden="true"
-    >
-      ✦
-    </span>
-  );
-
   const content = items.flatMap((item, i) => [
     <span
       key={`item-${i}`}

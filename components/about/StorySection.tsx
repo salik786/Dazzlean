@@ -190,8 +190,8 @@ export default function StorySection() {
               lineHeight: 1.5,
             }}
           >
-            "Pakistani skin is beautiful — it just needed products that truly
-            understood it."
+            &ldquo;Pakistani skin is beautiful — it just needed products that truly
+            understood it.&rdquo;
           </blockquote>
 
           {/* Founder Signature */}

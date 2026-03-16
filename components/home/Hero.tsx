@@ -211,12 +211,13 @@ export default function Hero() {
       >
         {/* Decorative rings */}
         <div
+          className="hero-ring"
           style={{
             position: "absolute",
             width: "480px",
             height: "480px",
             borderRadius: "50%",
-            border: "1px solid rgba(184,124,90,0.12)",
+            border: "1px solid rgba(192,120,80,0.14)",
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
@@ -224,12 +225,13 @@ export default function Hero() {
           }}
         />
         <div
+          className="hero-ring"
           style={{
             position: "absolute",
             width: "680px",
             height: "680px",
             borderRadius: "50%",
-            border: "1px solid rgba(184,124,90,0.07)",
+            border: "1px solid rgba(192,120,80,0.07)",
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",

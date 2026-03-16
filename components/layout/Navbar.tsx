@@ -59,12 +59,11 @@ export default function Navbar() {
             maxWidth: "1440px",
             margin: "0 auto",
             height: "100%",
-            padding: "0 80px",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
           }}
-          className="px-6 md:px-12 lg:px-20"
+          className="px-5 md:px-12 lg:px-20"
         >
           {/* Logo */}
           <Link

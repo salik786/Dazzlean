@@ -9,11 +9,11 @@
   --c-ivory3: #DDD3BF;
   --c-dark: #18160F;
   --c-dark2: #2C2819;
-  --c-muted: #7A7468;
+  --c-muted: #6E6860;
   --c-subtle: #B0A898;
-  --c-rose: #B87C5A;
-  --c-rose-lt: #E8D0C0;
-  --c-gold: #C8A060;
+  --c-rose: #C07850;
+  --c-rose-lt: #EDD4C0;
+  --c-gold: #CBA250;
   --c-gold-lt: #F0E4CC;
 }
 
@@ -95,10 +95,14 @@ html {
     grid-template-columns: 1fr !important;
   }
   .hero-right {
-    min-height: 50vh;
+    min-height: 44vh;
   }
   .hero-left {
-    padding: 64px 24px !important;
+    padding: 56px 20px 48px !important;
+  }
+  /* Hide large decorative rings on mobile — clipped partial arcs look messy */
+  .hero-ring {
+    display: none !important;
   }
 }
 
@@ -121,11 +125,17 @@ html {
     grid-template-columns: 1fr !important;
     border-left: none !important;
   }
+  .philosophy-card {
+    padding: 32px 20px !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .philosophy-grid {
     grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .philosophy-card {
+    padding: 40px 32px !important;
   }
 }
 
@@ -134,11 +144,20 @@ html {
   .testimonials-grid {
     grid-template-columns: 1fr !important;
   }
+  .testimonial-card {
+    padding: 28px 20px !important;
+  }
+  .testimonial-card--featured {
+    padding: 32px 20px !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .testimonials-grid {
     grid-template-columns: 1fr !important;
+  }
+  .testimonial-card--featured {
+    padding: 40px 36px !important;
   }
 }
 
@@ -146,6 +165,12 @@ html {
 @media (max-width: 767px) {
   .instagram-grid {
     grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .instagram-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
   }
 }
 
@@ -219,12 +244,23 @@ html {
   .footer-grid {
     grid-template-columns: 1fr !important;
     gap: 40px !important;
+    padding-top: 48px !important;
+    padding-bottom: 40px !important;
+  }
+  .footer-bottom {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .footer-grid {
     grid-template-columns: repeat(2, 1fr) !important;
+    padding-top: 60px !important;
+    padding-bottom: 48px !important;
   }
 }
 
@@ -249,7 +285,24 @@ html {
   }
 }
 
-/* Blog card hover (CSS-only, no JS event handlers needed) */
+/* ─── SECTION VERTICAL PADDING OVERRIDES ─── */
+/* Sections use inline paddingTop/Bottom: 100px on desktop. */
+/* These overrides reduce it for smaller screens. */
+@media (max-width: 767px) {
+  .padded-section {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .padded-section {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+}
+
+/* ─── BLOG CARD ─── */
 .blog-card {
   background-color: var(--c-ivory);
   overflow: hidden;
@@ -263,4 +316,9 @@ html {
 
 .blog-card:hover {
   transform: translateY(-4px);
+}
+
+/* ─── MARQUEE TEXT VISIBILITY ─── */
+.animate-marquee {
+  animation: marquee 28s linear infinite;
 }

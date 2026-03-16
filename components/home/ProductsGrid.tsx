@@ -192,9 +192,10 @@ export default function ProductsGrid() {
     <section
       style={{
         backgroundColor: "var(--c-bg)",
-        padding: "100px 80px",
+        paddingTop: "100px",
+        paddingBottom: "100px",
       }}
-      className="px-6 py-16 md:px-12 md:py-20 lg:px-20 lg:py-24"
+      className="padded-section px-6 md:px-12 lg:px-20"
     >
       <div style={{ maxWidth: "1440px", margin: "0 auto" }}>
         {/* Header Row */}

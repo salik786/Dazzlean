@@ -38,12 +38,13 @@ export default function Footer() {
         style={{
           maxWidth: "1440px",
           margin: "0 auto",
-          padding: "80px 80px 64px",
+          paddingTop: "80px",
+          paddingBottom: "64px",
           display: "grid",
           gridTemplateColumns: "2fr 1fr 1fr 1fr",
           gap: "64px",
         }}
-        className="footer-grid px-6 md:px-12 lg:px-20 py-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+        className="footer-grid px-6 md:px-12 lg:px-20"
       >
         {/* Brand Column */}
         <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
@@ -142,12 +143,13 @@ export default function Footer() {
           borderTop: "1px solid rgba(250,248,244,0.08)",
           maxWidth: "1440px",
           margin: "0 auto",
-          padding: "24px 80px",
+          paddingTop: "24px",
+          paddingBottom: "24px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
         }}
-        className="px-6 md:px-20 flex-col md:flex-row gap-4"
+        className="footer-bottom px-6 md:px-12 lg:px-20"
       >
         <p
           style={{

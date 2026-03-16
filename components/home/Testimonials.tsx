@@ -32,8 +32,8 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section
-      style={{ backgroundColor: "var(--c-ivory)", padding: "100px 80px" }}
-      className="px-6 py-16 md:px-12 md:py-20 lg:px-20 lg:py-24"
+      style={{ backgroundColor: "var(--c-ivory)", paddingTop: "100px", paddingBottom: "100px" }}
+      className="padded-section px-6 md:px-12 lg:px-20"
     >
       <div style={{ maxWidth: "1440px", margin: "0 auto" }}>
         {/* Header */}
@@ -85,6 +85,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
+              className={t.featured ? "testimonial-card testimonial-card--featured" : "testimonial-card"}
               style={{
                 backgroundColor: t.featured ? "var(--c-dark)" : "var(--c-bg)",
                 padding: t.featured ? "56px" : "40px",

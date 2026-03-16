@@ -32,7 +32,7 @@ const items = [
 
 export default function PhilosophySection() {
   return (
-    <section style={{ backgroundColor: "var(--c-dark)", padding: "100px 80px" }} className="px-6 py-16 md:px-12 md:py-20 lg:px-20 lg:py-24">
+    <section style={{ backgroundColor: "var(--c-dark)", paddingTop: "100px", paddingBottom: "100px" }} className="padded-section px-6 md:px-12 lg:px-20">
       <div style={{ maxWidth: "1440px", margin: "0 auto" }}>
         {/* Header */}
         <motion.div
@@ -103,6 +103,7 @@ function PhilosophyCard({
       transition={{ duration: 0.6, delay: index * 0.1 }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      className="philosophy-card"
       style={{
         padding: "48px 40px",
         borderRight: "1px solid rgba(250,248,244,0.06)",

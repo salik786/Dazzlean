@@ -17,7 +17,8 @@ export default function InstagramGrid() {
       {/* Header */}
       <div
         style={{
-          padding: "80px 80px 40px",
+          paddingTop: "80px",
+          paddingBottom: "40px",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",

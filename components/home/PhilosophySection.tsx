@@ -122,8 +122,8 @@ function PhilosophyCard({
           fontSize: "52px",
           fontWeight: 300,
           color: hovered
-            ? "rgba(184,124,90,0.45)"
-            : "rgba(184,124,90,0.2)",
+            ? "rgba(192,120,80,0.70)"
+            : "rgba(192,120,80,0.40)",
           lineHeight: 1,
           transition: "color 0.4s ease",
         }}
@@ -147,7 +147,7 @@ function PhilosophyCard({
           fontSize: "13px",
           fontWeight: 300,
           lineHeight: 1.8,
-          color: "rgba(250,248,244,0.38)",
+          color: "rgba(250,248,244,0.72)",
         }}
       >
         {item.description}

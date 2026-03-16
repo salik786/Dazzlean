@@ -45,7 +45,7 @@ export default function MarqueeStrip() {
           fontSize: "10px",
           letterSpacing: "4px",
           textTransform: "uppercase",
-          color: "rgba(250,248,244,0.4)",
+          color: "rgba(250,248,244,0.78)",
           gap: 0,
         }}
       >

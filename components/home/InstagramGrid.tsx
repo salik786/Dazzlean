@@ -56,11 +56,11 @@ export default function InstagramGrid() {
               color: "var(--c-dark)",
             }}
           >
-            @dazzlean.pk
+            @dazzleanofficial
           </h2>
         </motion.div>
         <a
-          href="https://instagram.com/dazzlean.pk"
+          href="https://www.instagram.com/dazzleanofficial/"
           target="_blank"
           rel="noopener noreferrer"
           style={{

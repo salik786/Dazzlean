@@ -68,7 +68,7 @@ export default function Footer() {
               fontSize: "13px",
               fontWeight: 300,
               lineHeight: 1.8,
-              color: "rgba(250,248,244,0.45)",
+              color: "rgba(250,248,244,0.72)",
               maxWidth: "260px",
             }}
           >
@@ -80,12 +80,12 @@ export default function Footer() {
             {[
               {
                 icon: Instagram,
-                href: "https://instagram.com/dazzlean.pk",
+                href: "https://www.instagram.com/dazzleanofficial/",
                 label: "Instagram",
               },
               {
                 icon: Facebook,
-                href: "https://facebook.com/dazzlean",
+                href: "https://www.facebook.com/share/16bRAgMaDn/",
                 label: "Facebook",
               },
               {
@@ -106,19 +106,18 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label={label}
                 style={{
-                  color: "rgba(250,248,244,0.4)",
+                  color: "rgba(250,248,244,0.65)",
                   transition: "color 0.3s ease",
                   display: "flex",
                   alignItems: "center",
                 }}
-                className="hover:text-c-rose"
                 onMouseEnter={(e) =>
                   ((e.currentTarget as HTMLElement).style.color =
                     "var(--c-rose)")
                 }
                 onMouseLeave={(e) =>
                   ((e.currentTarget as HTMLElement).style.color =
-                    "rgba(250,248,244,0.4)")
+                    "rgba(250,248,244,0.65)")
                 }
               >
                 <Icon size={18} strokeWidth={1.5} />
@@ -140,7 +139,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div
         style={{
-          borderTop: "1px solid rgba(250,248,244,0.08)",
+          borderTop: "1px solid rgba(250,248,244,0.12)",
           maxWidth: "1440px",
           margin: "0 auto",
           paddingTop: "24px",
@@ -156,7 +155,7 @@ export default function Footer() {
             fontFamily: "var(--font-jost)",
             fontSize: "12px",
             fontWeight: 300,
-            color: "rgba(250,248,244,0.3)",
+            color: "rgba(250,248,244,0.55)",
             letterSpacing: "1px",
           }}
         >
@@ -176,7 +175,7 @@ export default function Footer() {
                 fontWeight: 300,
                 letterSpacing: "2px",
                 textTransform: "uppercase",
-                color: "rgba(250,248,244,0.3)",
+                color: "rgba(250,248,244,0.55)",
                 textDecoration: "none",
                 transition: "color 0.3s ease",
               }}
@@ -185,7 +184,7 @@ export default function Footer() {
               }
               onMouseLeave={(e) =>
                 ((e.currentTarget as HTMLElement).style.color =
-                  "rgba(250,248,244,0.3)")
+                  "rgba(250,248,244,0.55)")
               }
             >
               {label}
@@ -227,7 +226,7 @@ function FooterColumn({
               fontFamily: "var(--font-jost)",
               fontSize: "13px",
               fontWeight: 300,
-              color: "rgba(250,248,244,0.45)",
+              color: "rgba(250,248,244,0.68)",
               textDecoration: "none",
               transition: "color 0.3s ease",
               letterSpacing: "0.5px",
@@ -237,7 +236,7 @@ function FooterColumn({
             }
             onMouseLeave={(e) =>
               ((e.currentTarget as HTMLElement).style.color =
-                "rgba(250,248,244,0.45)")
+                "rgba(250,248,244,0.68)")
             }
           >
             {label}

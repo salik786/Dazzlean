@@ -130,7 +130,7 @@ export default function Testimonials() {
                   fontWeight: 300,
                   lineHeight: 1.7,
                   color: t.featured
-                    ? "rgba(250,248,244,0.65)"
+                    ? "rgba(250,248,244,0.85)"
                     : "var(--c-dark)",
                   flex: 1,
                 }}
@@ -159,7 +159,7 @@ export default function Testimonials() {
                     letterSpacing: "2px",
                     textTransform: "uppercase",
                     color: t.featured
-                      ? "rgba(250,248,244,0.35)"
+                      ? "rgba(250,248,244,0.62)"
                       : "var(--c-subtle)",
                   }}
                 >
